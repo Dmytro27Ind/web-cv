@@ -1,13 +1,15 @@
 import React from "react";
 import Main from "./components/Main";
 import Sidebar from "./components/Sidebar";
-import "./styles/App.css"
+import "./styles/App.scss"
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar/>
-      <Main/>
+    <div className="app" data-theme="dark">
+      <div className="wrapper">
+        <Sidebar/>
+        <Main/>
+      </div>
     </div>
   );
 }

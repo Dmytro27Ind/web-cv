@@ -1,0 +1,15 @@
+
+$dark-grey: #222831;
+$grey: #393E46;
+$grey-2: #35383F;
+$light-grey: #EEEEEE;
+$light-grey-2: #DEDEDE;
+$yellow: #FFD369;
+
+[data-theme='light'] {
+    --background: #{$light-grey};
+}
+
+[data-theme='dark'] {
+    --background: #{$dark-grey};
+}
