@@ -1,0 +1,10 @@
+
+.contact__icon {
+    color: var(--text-primary);
+    height: 30px;
+    width: 30px;
+}
+
+.contact__icon:hover {
+    color: var(--accent);
+}
