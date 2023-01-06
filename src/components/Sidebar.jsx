@@ -4,7 +4,7 @@ import { BsFacebook } from 'react-icons/bs';
 import themeVariables from '../styles/theme-variables.module.scss'
 
 function Sidebar() {
-  console.log(themeVariables);
+  // console.log(themeVariables);
   return (
     <div className="sidebar">
         <div className="sidebar__header">
