@@ -125,6 +125,7 @@
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.05em;
+    transition: all 0.3s ease-in-out;
 }
 
 .sidebar__download a:hover {
