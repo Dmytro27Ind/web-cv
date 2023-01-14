@@ -60,16 +60,47 @@
 }
 
 .sidebar__nav a {
-    color: var(--text-primary);
+    /* color: var(--text-primary); */
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.05em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-image: linear-gradient(
+        to right,
+        var(--accent),
+        var(--accent) 50%,
+        var(--text-primary) 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar__nav a:before {
+    content: '';
+    background: var(--accent);
+    display: block;
+    position: relative;
+    top: 22px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
 }
 
 .sidebar__nav a:hover {
-    color: var(--accent);
+    /* color: var(--accent); */
+    background-position: 0;
+}
+
+.sidebar__nav a:hover::before {
+    width: 100%;
 }
 
 .sidebar__footer-wrapper {
