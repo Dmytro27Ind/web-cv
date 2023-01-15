@@ -8,7 +8,8 @@ function App() {
   const theme = useSelector(state => state.theme.theme)
 
   return (
-    <div className="app" data-theme={theme}>
+    <div className="App" data-theme={theme}>
+      <div className="App__background"></div>
       <div className="wrapper">
         <Sidebar/>
         <Main/>
