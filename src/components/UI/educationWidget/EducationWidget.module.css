@@ -1,0 +1,51 @@
+.wrapper {
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.ellipse {
+    width: 21px;
+    height: 21px;
+    background: var(--background);
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    position: absolute;
+    left: 32px;
+}
+
+.row-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 40px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.row__time {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+.row__degree {
+    display: flex;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: var(--text-primary);
+}
+.row__university {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: var(--text-primary);
+}
