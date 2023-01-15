@@ -1,37 +1,30 @@
 import React, { useEffect, useState } from 'react'
-import { BsFacebook, BsTelegram, BsGithub } from 'react-icons/bs';
+import { BsFacebook, BsTelegram, BsGithub, BsFillTelephoneFill } from 'react-icons/bs';
 import { SiDevpost } from 'react-icons/si'
 import { FiMail } from 'react-icons/fi'
 import cl from './ContactIcon.module.css'
+import { IconContext } from "react-icons";
 
-function ContactIcon({link, name}) {
+function ContactIcon({link, name, size}) {
     let [icon, setIcon] = useState('')
 
     useEffect(() => {
         switch (name) {
-            case 'facebook':
-                setIcon(<BsFacebook className={cl["contact__icon"]}/>)
-                break;
-            case 'telegram':
-                setIcon(<BsTelegram className={cl["contact__icon"]}/>)
-                break;
-            case 'github':
-                setIcon(<BsGithub className={cl["contact__icon"]}/>)
-                break;
-            case 'devpost':
-                setIcon(<SiDevpost className={cl["contact__icon"]}/>)
-                break;
-            case 'gmail':
-                setIcon(<FiMail className={cl["contact__icon"]}/>)
-                break;
-            default:
-                setIcon('')
+            case 'facebook':    setIcon(<BsFacebook/>);             break;
+            case 'telegram':    setIcon(<BsTelegram/>);             break;
+            case 'github':      setIcon(<BsGithub/>);               break;
+            case 'devpost':     setIcon(<SiDevpost/>);              break;
+            case 'gmail':       setIcon(<FiMail/>);                 break;
+            case 'phone':       setIcon(<BsFillTelephoneFill/>);    break;
+            default:            setIcon('')
         }
-    }, [name])
+    }, [name, size])
 
     return (
         <a href={link} target="_blank" rel="noreferrer">
-            {icon}
+            <IconContext.Provider value={{ size: size, className: cl["contact__icon"] }}>
+                {icon}
+            </IconContext.Provider>
         </a>
     )
 }

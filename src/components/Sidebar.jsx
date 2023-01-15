@@ -16,11 +16,11 @@ function Sidebar() {
             <h1>Bc. Dmytro Kagirov</h1>
             <h2>Student, Web Developer</h2>
             <div className='sidebar__contacts'>
-              <ContactIcon link='https://www.facebook.com/dmytro.kagirov.1' name="facebook"/>
-              <ContactIcon link='https://t.me/lyn10i' name="telegram"/>
-              <ContactIcon link='https://github.com/Dmytro27Ind' name="github"/>
-              <ContactIcon link='https://devpost.com/dmytro27kagirov' name="devpost"/>
-              <ContactIcon link='mailto:dmytro27kagirov@gmail.com' name="gmail"/>
+              <ContactIcon size={30} link='https://www.facebook.com/dmytro.kagirov.1' name="facebook"/>
+              <ContactIcon size={30} link='https://t.me/lyn10i' name="telegram"/>
+              <ContactIcon size={30} link='https://github.com/Dmytro27Ind' name="github"/>
+              <ContactIcon size={30} link='https://devpost.com/dmytro27kagirov' name="devpost"/>
+              <ContactIcon size={30} link='mailto:dmytro27kagirov@gmail.com' name="gmail"/>
             </div>
         </div>
         <div className='sidebar__nav'>

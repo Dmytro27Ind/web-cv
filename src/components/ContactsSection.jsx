@@ -1,18 +1,34 @@
 import React from 'react'
 import VrLine from './UI/vrline/VrLine'
+import ContactIcon from './UI/contactIcon/ContactIcon'
 
 function ContactsSection() {
   return (
     <div className='main__section'>
         <h2>Contacts</h2>
         <div className='contacts__table'>
-            <VrLine height={127} borderWidth={2}/>
-            <div className='contacts__categories'>
-                <h3>Mail:</h3>
-                <h3>GitHub:</h3>
-                <h3>Telegram:</h3>
-                <h3>Phone:</h3>
-                <h3>Devpost:</h3>
+            <VrLine height={134} borderWidth={2}/>
+            <div className='contacts__categories-wrapper'>
+                <div className='contacts__categories'>
+                    <ContactIcon size={15} name="gmail"/>
+                    <h3>Mail:</h3>
+                </div>
+                <div className='contacts__categories'>
+                    <ContactIcon size={15} name="github"/>
+                    <h3>GitHub:</h3>
+                </div>
+                <div className='contacts__categories'>
+                    <ContactIcon size={15} name="telegram"/>
+                    <h3>Telegram:</h3>
+                </div>
+                <div className='contacts__categories'>
+                <ContactIcon size={15} name="phone"/>
+                    <h3>Phone:</h3>
+                </div>
+                <div className='contacts__categories'>
+                    <ContactIcon size={15} name="devpost"/>
+                    <h3>Devpost:</h3>
+                </div>
             </div>
             <div className='contacts__data'>
                 <a href='mailto:dmytro27kagirov@gmail.com' target="_blank" rel="noreferrer">
