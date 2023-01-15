@@ -26,9 +26,9 @@ function Sidebar() {
         <div className='sidebar__nav'>
           <ul>
             <li><a href="#main">About me</a></li>
-            <li><a href="#main">Contacts</a></li>
             <li><a href="#main">Education</a></li>
             <li><a href="#main">Skills</a></li>
+            <li><a href="#main">Contacts</a></li>
             <li><a href="#main">Languages</a></li>
             <li><a href="#main">Projects</a></li>
           </ul>
