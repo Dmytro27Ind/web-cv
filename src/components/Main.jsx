@@ -3,6 +3,7 @@ import "../styles/Main.css"
 import AboutMeSection from './AboutMeSection'
 import ContactsSection from './ContactsSection'
 import EducationSection from './EducationSection'
+import SkillsSection from './SkillsSection'
 
 function Main() {
   return (
@@ -10,6 +11,7 @@ function Main() {
         <AboutMeSection/>
         <ContactsSection/>
         <EducationSection/>
+        <SkillsSection/>
     </div>
   )
 }

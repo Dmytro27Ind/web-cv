@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    gap: 25px;
+}
+thead th{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+td, th {
+    padding: 9px;
+}
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    height: 52px;
+}
+.skill img {
+    width: 30px;
+    height: 30px;
+}

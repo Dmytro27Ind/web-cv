@@ -93,3 +93,11 @@
     gap: 10px;
     margin-left: 64px;
 }
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
