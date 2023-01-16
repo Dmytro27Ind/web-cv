@@ -9,7 +9,7 @@ const themeReducer = (state = defaultState, action) => {
         case SWITCH_THEME:
             let th = (state.theme === 'light')? 'dark' : 'light'
             localStorage.setItem('theme', th)
-            return (state.theme === 'light')? {...state, theme: th} : {...state, theme: th};
+            return {...state, theme: th};
         default:
             return state;
     }
