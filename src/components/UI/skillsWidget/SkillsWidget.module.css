@@ -1,6 +1,6 @@
 .wrapper {
     display: flex;
-    gap: 25px;
+    gap: 15px;
 }
 thead th{
     font-weight: 700;
