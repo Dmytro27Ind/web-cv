@@ -3,7 +3,7 @@ import SkillsWidget from './UI/skillsWidget/SkillsWidget'
 
 function SkillsSection() {
   return (
-    <div className='main__section'>
+    <div className='main__section' id='skills'>
         <h2>Skills</h2>
         <div className='skills-wrapper'>
           <SkillsWidget header='Front-End' skillRows={[

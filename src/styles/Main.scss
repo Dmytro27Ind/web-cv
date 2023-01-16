@@ -5,12 +5,12 @@
     flex-direction: column;
     gap: 20px;
 }
-
 .main__section {
     max-width: 762px;
     width: 100%;
     background: var(--comp-bg-1);
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .main__section h2 {
     font-weight: 700;

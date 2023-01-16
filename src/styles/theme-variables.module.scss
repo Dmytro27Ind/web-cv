@@ -1,10 +1,12 @@
 
 $dark-grey: #222831;
 $grey: #393E46;
-$grey-2: #35383F;
+$grey-2: #2f3239;
 $light-grey: #EEEEEE;
 $light-grey-2: #DEDEDE;
+$white: #ffffff;
 $yellow: #FFD369;
+$yellow-2: #eeaa18;
 
 :export {
     dark-grey: $dark-grey;
@@ -13,21 +15,25 @@ $yellow: #FFD369;
     light-grey: $light-grey;
     light-grey-2: $light-grey-2;
     yellow: $yellow;
+    yellow-2: $yellow-2;
+    white: $white;
 }
 
 [data-theme='light'] {
-    --background: #{$light-grey};
-    --comp-bg-1: #{$light-grey-2};
-    --comp-bg-2: #{$grey-2};
-    --accent: #{$yellow};
+    --background: #{$white};
+    --comp-bg-1: #{rgba($white, 0.88)};
+    --comp-bg-2: #{rgba($white, 0.88)};
+    --comp-border: #{$grey};
+    --accent: #{$yellow-2};
     --text-primary: #{$dark-grey};
     --text-secondary: #{$grey-2};
 }
 
 [data-theme='dark'] {
     --background: #{$dark-grey};
-    --comp-bg-1: #{$grey};
-    --comp-bg-2: #{$grey-2};
+    --comp-bg-1: #{rgba($grey, 0.88)};
+    --comp-bg-2: #{rgba($grey-2, 0.88)};
+    --comp-border: #{$dark-grey};
     --accent: #{$yellow};
     --text-primary: #{$light-grey};
     --text-secondary: #{$light-grey-2};

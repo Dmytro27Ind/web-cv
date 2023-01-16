@@ -3,7 +3,7 @@ import EducationWidget from './UI/educationWidget/EducationWidget'
 
 function EducationSection() {
   return (
-    <div className='main__section'>
+    <div className='main__section' id='education'>
         <h2>Education</h2>
         <EducationWidget
             education = {[

@@ -4,7 +4,7 @@ import ContactIcon from './UI/contactIcon/ContactIcon'
 
 function ContactsSection() {
   return (
-    <div className='main__section'>
+    <div className='main__section' id='contacts'>
         <h2>Contacts</h2>
         <div className='contacts__table'>
             <VrLine height={134} borderWidth={2}/>

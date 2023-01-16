@@ -3,7 +3,7 @@ import VrLine from './UI/vrline/VrLine'
 
 function LanguagesSection() {
   return (
-    <div className='main__section'>
+    <div className='main__section' id='languages'>
         <h2>Languages</h2>
         <div className="languages-wrapper">
             <VrLine borderWidth={2}/>

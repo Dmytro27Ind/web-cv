@@ -25,12 +25,12 @@ function Sidebar() {
         </div>
         <div className='sidebar__nav'>
           <ul>
-            <li><a href="#main">About me</a></li>
-            <li><a href="#main">Education</a></li>
-            <li><a href="#main">Skills</a></li>
-            <li><a href="#main">Contacts</a></li>
-            <li><a href="#main">Languages</a></li>
-            <li><a href="#main">Projects</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#projects">Projects</a></li>
           </ul>
         </div>
         <div className='sidebar__footer-wrapper'>
