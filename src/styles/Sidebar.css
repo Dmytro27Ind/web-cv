@@ -142,3 +142,54 @@
     width: 30px;
     height: 30px;
 }
+
+@media (max-width: 1120px) {
+    .sidebar {
+        height: 97%;
+    }
+    .sidebar__header {
+        width: 220px;
+        height: 280px;
+    }
+    .sidebar__header h1 {
+        font-size: 15px;
+    }
+    .sidebar__header h2 {
+        font-size: 13px;
+    }
+    .sidebar__nav a {
+        font-size: 15px;
+    }
+    .sidebar__footer-wrapper {
+        width: 220px;
+    }
+    .sidebar__footer-toggle span{
+        font-size: 13px;
+    }
+    .sidebar__download a {
+        font-size: 15px;
+        gap: 10px;
+    }
+    .sidebar__download-icon {
+        width: 22px;
+        height: 22px;
+    }
+    .sidebar__contacts{
+        margin-top: 25px;
+        gap: 8px;
+    }
+    .sidebar__contacts a svg {
+        width: 22px;
+        height: 22px;
+    }
+    .sidebar__ava {
+        width: 120px;
+        height: 120px;
+        margin-top: 15px;
+    }
+}
+@media (max-width: 840px) {
+    .sidebar {
+        height: 98%;
+    }
+}

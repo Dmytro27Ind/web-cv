@@ -34,18 +34,3 @@
     letter-spacing: 0.05em;
     color: var(--accent);
 }
-.row__degree {
-    display: flex;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.05em;
-    color: var(--text-primary);
-}
-.row__university {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.05em;
-    color: var(--text-primary);
-}

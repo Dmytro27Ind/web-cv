@@ -9,12 +9,12 @@ function EducationWidget({education}) {
         <div className={cl['row-wrapper']}>
             {education.map((ed, index) =>
                 <div key={index} className={cl['row']}>
-                    <div className={cl['row__time']}>{ed.time}</div>
-                    <div className={cl['row__degree']}>
+                    <h4 className={cl['row__time']}>{ed.time}</h4>
+                    <h3 className={cl['row__degree']}>
                         <div className={cl['ellipse']}/>
                         {ed.degree}
-                    </div>
-                    <div className={cl['row__university']}>{ed.university}</div>
+                    </h3>
+                    <span className={cl['row__university']}>{ed.university}</span>
                 </div>
             )}
         </div>

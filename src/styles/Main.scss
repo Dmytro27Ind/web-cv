@@ -115,3 +115,30 @@
 .languages__item {
     display: flex;
 }
+
+@media (max-width: 1120px) {
+    .main {
+        margin-left: 235px;
+        gap: 15px;
+    }
+    .main__section h2 {
+        font-size: 15px;
+    }
+    .main__section p, .main__section h3, .main__section span, .main__section h4 {
+        font-size: 13px;
+    }
+    .skills-wrapper table {
+        padding-left: 20px;
+    }
+    .skills-wrapper th, .skills-wrapper td {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+}
+
+@media (max-width: 840px) {
+    .main {
+        margin-left: 230px;
+        gap: 10px;
+    }
+}

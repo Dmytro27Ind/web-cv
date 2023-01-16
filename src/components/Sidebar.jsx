@@ -41,7 +41,9 @@ function Sidebar() {
                 <BiDownload className='sidebar__download-icon'/>
               </a>
             </div>
-            <ThemeToggle onChange={() => dispatch(allActions.switchTheme())}/>
+            <div className='sidebar__footer-toggle'>
+              <ThemeToggle onChange={() => dispatch(allActions.switchTheme())}/>
+            </div>
           </div>
         </div>
     </div>
