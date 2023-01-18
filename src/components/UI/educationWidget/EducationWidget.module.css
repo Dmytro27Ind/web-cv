@@ -12,6 +12,7 @@
     border-radius: 50%;
     position: absolute;
     left: 42px;
+    transition: background-color 300ms linear;
 }
 
 .row-wrapper {

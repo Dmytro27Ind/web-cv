@@ -9,22 +9,22 @@ function BurgerSection() {
 
     const burgerClick = () => {
         let sidebar = document.getElementsByClassName('sidebar')
-        sidebar[0].style.display = 'block'
+        sidebar[0].style['margin-left'] = '0px'
         let burgerArea = document.getElementsByClassName('burger__area')
         burgerArea[0].style.display = 'block'
     }
     const burgerAreaClick = () => {
         let sidebar = document.getElementsByClassName('sidebar')
-        sidebar[0].style.display = 'none'
+        sidebar[0].style['margin-left'] = ''
         let burgerArea = document.getElementsByClassName('burger__area')
         burgerArea[0].style.display = 'none'
     }
 
   return (
-    <div className='main__section burger'>
+    <div className='burger'>
         <div className='burger__area' onClick={burgerAreaClick}></div>
         <GiHamburgerMenu onClick={burgerClick} className='burger-icon'/>
-        <h1>Bc. Dmytro Kagirov</h1>
+        <h1 className='burger__name'>Bc. Dmytro Kagirov</h1>
         <div className='burger__toggle'>
             <ThemeToggle onChange={() => dispatch(allActions.switchTheme())}/>
         </div>

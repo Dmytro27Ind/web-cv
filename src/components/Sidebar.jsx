@@ -5,12 +5,15 @@ import allActions from "../store/actions"
 import ContactIcon from './UI/contactIcon/ContactIcon';
 import { BiDownload } from 'react-icons/bi'
 import ThemeToggle from './UI/toggle/ThemeToggle';
+import BurgerSection from './BurgerSection';
 
 function Sidebar() {
   const dispatch = useDispatch()
 
   return (
-    <div className="sidebar">
+    <div className='sidebar-wrapper'>
+      <BurgerSection/>
+      <div className="sidebar">
         <div className="sidebar__header">
             <img className="sidebar__ava" alt="ava" src={require("../assets/photo.png")}/>
             <h1>Bc. Dmytro Kagirov</h1>
@@ -46,6 +49,7 @@ function Sidebar() {
             </div>
           </div>
         </div>
+      </div>
     </div>
   )
 }
