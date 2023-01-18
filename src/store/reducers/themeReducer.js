@@ -1,7 +1,11 @@
 import { SWITCH_THEME } from '../actions/constants'
 
+const isDarkTheme = window?.matchMedia('(prefers-color-scheme: dark)').matches
+const defaultTheme = isDarkTheme ? 'dark' : 'light'
+console.log('defaultTheme: ' + defaultTheme);
+
 const defaultState = {
-    theme: localStorage.getItem('theme') || 'dark'
+    theme: localStorage.getItem('theme') || defaultTheme
 }
 
 const themeReducer = (state = defaultState, action) => {

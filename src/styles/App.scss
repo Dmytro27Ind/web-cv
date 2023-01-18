@@ -14,6 +14,7 @@ html {
 
 .App__background {
     background: var(--background);
+    transition: background-color 300ms linear;
     position: fixed;
     top: 0px;
     width: 100%;
