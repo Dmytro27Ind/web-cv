@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {} from 'react'
 import { useDispatch } from "react-redux/es/exports";
 import "../styles/Sidebar.css"
 import allActions from "../store/actions"
@@ -6,9 +6,11 @@ import ContactIcon from './UI/contactIcon/ContactIcon';
 import { BiDownload } from 'react-icons/bi'
 import ThemeToggle from './UI/toggle/ThemeToggle';
 import BurgerSection from './BurgerSection';
+import { useSidebar } from '../hooks/useSidebar';
 
 function Sidebar() {
   const dispatch = useDispatch()
+  const sidebarHide = useSidebar()[1]
 
   return (
     <div className='sidebar-wrapper'>
@@ -28,12 +30,12 @@ function Sidebar() {
         </div>
         <div className='sidebar__nav'>
           <ul>
-            <li><a href="#about-me">About me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-            <li><a href="#languages">Languages</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a onClick={sidebarHide} href="#about-me">About me</a></li>
+            <li><a onClick={sidebarHide} href="#education">Education</a></li>
+            <li><a onClick={sidebarHide} href="#skills">Skills</a></li>
+            <li><a onClick={sidebarHide} href="#contacts">Contacts</a></li>
+            <li><a onClick={sidebarHide} href="#languages">Languages</a></li>
+            <li><a onClick={sidebarHide} href="#projects">Projects</a></li>
           </ul>
         </div>
         <div className='sidebar__footer-wrapper'>

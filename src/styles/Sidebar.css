@@ -192,6 +192,15 @@
     height: 30px;
 }
 
+@media (max-height: 800px) {
+    .sidebar__nav {
+        margin-top: 20px;
+    }
+    .sidebar__nav ul {
+        gap: 10px
+    }
+}
+
 @media (max-width: 1120px) {
     .sidebar {
         height: 97%;

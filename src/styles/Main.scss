@@ -12,6 +12,8 @@
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: background-color 300ms linear;
+    padding-right: 15px;
+    scroll-margin-top: 55px;
 }
 .main__section h1 {
     font-weight: 700;
@@ -162,4 +164,7 @@
         gap: 10px;
         transition: margin-left 0.4s linear;
     }
+}
+@media (max-width: 530px) {
+
 }

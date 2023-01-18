@@ -3,22 +3,11 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import ThemeToggle from './UI/toggle/ThemeToggle';
 import { useDispatch } from "react-redux/es/exports";
 import allActions from "../store/actions"
+import { useSidebar } from '../hooks/useSidebar';
 
 function BurgerSection() {
     const dispatch = useDispatch()
-
-    const burgerClick = () => {
-        let sidebar = document.getElementsByClassName('sidebar')
-        sidebar[0].style['margin-left'] = '0px'
-        let burgerArea = document.getElementsByClassName('burger__area')
-        burgerArea[0].style.display = 'block'
-    }
-    const burgerAreaClick = () => {
-        let sidebar = document.getElementsByClassName('sidebar')
-        sidebar[0].style['margin-left'] = ''
-        let burgerArea = document.getElementsByClassName('burger__area')
-        burgerArea[0].style.display = 'none'
-    }
+    const [burgerClick, burgerAreaClick] = useSidebar();
 
   return (
     <div className='burger'>
