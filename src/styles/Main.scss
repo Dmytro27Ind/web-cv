@@ -12,7 +12,8 @@
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: background-color 300ms linear;
-    padding-right: 15px;
+    padding-right: 20px;
+    padding-left: 50px;
     scroll-margin-top: 55px;
 }
 .main__section h1 {
@@ -30,7 +31,7 @@
     line-height: 20px;
     letter-spacing: 0.05em;
     color: var(--accent);
-    margin-left: 40px;
+    margin-left: -10px;
     margin-top: 20px;
     margin-bottom: 15px;
     transition: color 300ms linear;
@@ -41,7 +42,6 @@
     line-height: 17px;
     letter-spacing: 0.05em;
     color: var(--text-primary);
-    margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 15px;
     transition: color 300ms linear;
@@ -72,7 +72,15 @@
     color: var(--accent);
 }
 
+#about-me {
+    position: relative;
+}
+#about-me h2 {
+    margin-top: 190px;
+}
 .about-me__img {
+    position: absolute;
+    left: 0px;
     border-radius: 5px;
     width: 100%;
     height: 170px;
@@ -106,14 +114,19 @@
 .contacts__data {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 9px;
     margin-left: 64px;
+}
+
+.contacts-mobile {
+    display: none;
 }
 
 .skills-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    row-gap: 15px;
+    justify-content: space-between;
     padding-right: 40px;
     padding-bottom: 20px;
 }
@@ -131,6 +144,13 @@
 .languages__item {
     display: flex;
 }
+
+#about-me   { order: 0; }
+#education  { order: 1; }
+#skills     { order: 2; }
+#contacts   { order: 3; }
+#languages  { order: 4; }
+#projects   { order: 5; }
 
 @media (max-width: 1120px) {
     .main {
@@ -165,6 +185,27 @@
         transition: margin-left 0.4s linear;
     }
 }
-@media (max-width: 530px) {
-
+@media (max-width: 540px) {
+    .main__section {
+        padding-left: 25px;
+    }
+    .main__section h2 {
+        margin-left: 0px;
+    }
+    .contacts__table {
+        display: none;
+    }
+    #contacts {
+        background-color: transparent;
+        box-shadow: none;
+        order: 0;
+        padding: 20px 30px;
+    }
+    #contacts h2 {
+        display: none;
+    }
+    .contacts-mobile {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }

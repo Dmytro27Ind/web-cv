@@ -9,7 +9,9 @@ function SkillsWidget({header, skillRows}) {
       <table>
         <thead>
           <tr>
-            <th>{header}</th>
+            <div>
+              {header}
+            </div>
           </tr>
         </thead>
         <tbody>

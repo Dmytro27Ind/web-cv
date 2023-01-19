@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/Main.scss"
 import AboutMeSection from './AboutMeSection'
-import ContactsSection from './ContactsSection'
+import ContactsSection from './contactSection/ContactsSection'
 import EducationSection from './EducationSection'
 import LanguagesSection from './LanguagesSection'
 import ProjectsSection from './ProjectsSection'

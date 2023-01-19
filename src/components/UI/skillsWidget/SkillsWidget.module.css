@@ -2,15 +2,15 @@
     display: flex;
     gap: 15px;
 }
-thead th{
+thead tr{
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.05em;
     color: var(--accent);
 }
-td, th {
-    padding: 9px;
+td, tr div {
+    padding: 5px;
 }
 .skill {
     display: flex;
