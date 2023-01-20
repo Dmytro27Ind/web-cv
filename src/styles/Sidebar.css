@@ -261,6 +261,12 @@
         height: 100%;
         transition: margin-left 0.4s linear;
     }
+    .sidebar__footer-wrapper {
+        /* top: 92%; */
+    }
+    .sidebar__footer-toggle {
+        /* display: none; */
+    }
     .burger {
         display: flex;
     }
