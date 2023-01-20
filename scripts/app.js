@@ -1,4 +1,4 @@
-particlesJS.load('particles-js', {
+particlesJS('particles-js', {
     "particles": {
       "number": {
         "value": 30,
@@ -107,11 +107,9 @@ particlesJS.load('particles-js', {
       }
     },
     "retina_detect": true
-  }, function() {
-    console.log('callback - particles.js config loaded');
-});
+  });
 
-particlesJS.load('particles-js-2', {
+particlesJS('particles-js-2', {
     "particles": {
       "number": {
         "value": 30,
@@ -220,6 +218,4 @@ particlesJS.load('particles-js-2', {
       }
     },
     "retina_detect": true
-  }, function() {
-    console.log('callback - particles-2.js config loaded');
-});
+  });
