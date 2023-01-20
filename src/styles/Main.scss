@@ -133,6 +133,9 @@
     padding-right: 40px;
     padding-bottom: 20px;
 }
+.skill-mobile-widgets {
+    display: none;
+}
 
 .languages-wrapper {
     display: flex;
@@ -210,5 +213,40 @@
     .contacts-mobile {
         display: flex;
         justify-content: space-evenly;
+    }
+}
+@media (max-width: 510px) {
+    .main__section {
+        padding: 0px 20px;
+    }
+    .skill-mobile-widgets {
+        display: flex;
+        padding: 0px;
+        justify-content: center;
+    }
+    .skill-mobile-widgets table {
+        padding-left: 0px;
+    }
+    .skill-mobile-widgets td {
+        padding: 5px 15px;
+    }
+    .skill-widgets {
+        display: none;
+    }
+}
+@media (max-width: 450px) {
+    .skill-mobile-widgets td {
+        padding: 5px 10px;
+    }
+    .main__section p {
+        margin-right: 0px;
+    }
+}
+@media (max-width: 390px) {
+    .skill-mobile-widgets td {
+        padding: 5px 5px;
+    }
+    .about-me__data {
+        margin-left: 20px;
     }
 }

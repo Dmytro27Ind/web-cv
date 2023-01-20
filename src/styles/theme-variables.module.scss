@@ -21,8 +21,9 @@ $yellow-2: #8333D4;
 
 [data-theme='light'] {
     --background: #{$white};
-    --comp-bg-1: #{rgba($white, 0.88)};
-    --comp-bg-2: #{rgba($white, 0.88)};
+    --comp-bg-1: #{rgba($white, 0.6)};
+    --comp-bg-2: #{rgba($white, 0.6)};
+    --comp-bg-3: #{rgba($white, 0.88)};
     --comp-border: #{$grey};
     --accent: #{$yellow-2};
     --text-primary: #{$dark-grey};
@@ -31,8 +32,9 @@ $yellow-2: #8333D4;
 
 [data-theme='dark'] {
     --background: #{$dark-grey};
-    --comp-bg-1: #{rgba($grey, 0.88)};
-    --comp-bg-2: #{rgba($grey-2, 0.88)};
+    --comp-bg-1: #{rgba($grey, 0.6)};
+    --comp-bg-2: #{rgba($grey-2, 0.6)};
+    --comp-bg-3: #{rgba($grey, 0.88)};
     --comp-border: #{$dark-grey};
     --accent: #{$yellow};
     --text-primary: #{$light-grey};

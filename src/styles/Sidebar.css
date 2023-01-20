@@ -5,7 +5,7 @@
     right: 10px;
     left: 10px;
     z-index: 1;
-    background: var(--comp-bg-1);
+    background: var(--comp-bg-3);
     border-radius: 5px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     transition: background-color 300ms linear;
@@ -260,14 +260,20 @@
         left: 0px;
         height: 100%;
         transition: margin-left 0.4s linear;
-    }
-    .sidebar__footer-wrapper {
-        /* top: 92%; */
-    }
-    .sidebar__footer-toggle {
-        /* display: none; */
+        background: var(--comp-bg-3);
     }
     .burger {
         display: flex;
+    }
+}
+@media (max-width: 475px) {
+    .burger .custom-toggle span {
+        display: none;
+    }
+}
+@media (max-width: 390px) {
+    .sidebar-wrapper h1.burger__name {
+        margin-left: 0px;
+        font-size: 15px;
     }
 }
