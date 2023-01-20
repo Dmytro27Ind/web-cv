@@ -9,9 +9,9 @@ function SkillsWidget({header, skillRows}) {
       <table>
         <thead>
           <tr>
-            <div>
+            <td colSpan="3">
               {header}
-            </div>
+            </td>
           </tr>
         </thead>
         <tbody>

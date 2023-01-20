@@ -25,13 +25,13 @@ function ContactsSection() {
         <div className='contacts__table'>
             <VrLine height={134} borderWidth={2}/>
             <div className='contacts__categories-wrapper'>
-                {categories.map((cat) =>
-                    <ContactCategories name={cat.name} label={cat.label}/>
+                {categories.map((cat, ind) =>
+                    <ContactCategories key={ind} name={cat.name} label={cat.label}/>
                 )}
             </div>
             <div className='contacts__data'>
-                {data.map((d) =>
-                    <a href={d.href} target="_blank" rel="noreferrer">
+                {data.map((d, ind) =>
+                    <a key={ind} href={d.href} target="_blank" rel="noreferrer">
                         <span>{d.span}</span>
                     </a>
                 )}
