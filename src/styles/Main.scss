@@ -185,6 +185,24 @@
 .project h3 a {
     color: var(--accent);
 }
+.project h3 a:before {
+    content: '';
+    background: var(--accent);
+    display: block;
+    position: relative;
+    top: 22px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+}
+.project h3 a:hover {
+    /* color: var(--accent); */
+    background-position: 0;
+}
+.project h3 a:hover::before {
+    width: 100%;
+}
 .project h3 svg {
     margin-right: 10px;
     fill: var(--text-primary);
