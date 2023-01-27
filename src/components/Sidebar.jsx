@@ -41,7 +41,7 @@ function Sidebar() {
         <div className='sidebar__footer-wrapper'>
           <div className='sidebar__footer'>
             <div className='sidebar__download'>
-              <a href="#main">
+              <a href="https://github.com/Dmytro27Ind/web-cv/raw/main/Dmytro_Kagirov_CV.pdf" download>
                 <span>Download CV</span>
                 <BiDownload className='sidebar__download-icon'/>
               </a>
