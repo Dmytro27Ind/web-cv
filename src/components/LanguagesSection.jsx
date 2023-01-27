@@ -18,7 +18,7 @@ function LanguagesSection() {
                 </div>
                 <div className="languages__item">
                     <h3>English</h3>
-                    <span>&nbsp;- A2</span>
+                    <span>&nbsp;- B1</span>
                 </div>
                 <div className="languages__item">
                     <h3>Russian</h3>
