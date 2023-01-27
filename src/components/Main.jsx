@@ -4,7 +4,7 @@ import AboutMeSection from './AboutMeSection'
 import ContactsSection from './contactSection/ContactsSection'
 import EducationSection from './EducationSection'
 import LanguagesSection from './LanguagesSection'
-import ProjectsSection from './ProjectsSection'
+import ProjectsSection from './projectSection/ProjectsSection'
 import SkillsSection from './SkillsSection'
 
 function Main() {
