@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
-function ProjectItem({name, desc, lang, link}) {
+function ProjectItem({name, desc, lang, link, demo}) {
     let [langClass, setLangClass] = useState([])
     useEffect(() => {
         lang.forEach((l) => {
@@ -38,6 +38,11 @@ function ProjectItem({name, desc, lang, link}) {
             </a>
         </h3>
         <span>{desc}</span>
+        {demo &&
+            <a href={demo} target="_blank" rel="noreferrer">
+                <span style={{color: 'var(--accent)'}}>Link to demo</span>
+            </a>
+        }
         <div className='project__languages'>
             {langClass.map((l, ind) =>
                 <div key={ind} className='project__language'>
