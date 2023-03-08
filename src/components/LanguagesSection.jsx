@@ -20,10 +20,10 @@ function LanguagesSection() {
                     <h3>English</h3>
                     <span>&nbsp;- B1</span>
                 </div>
-                <div className="languages__item">
+                {/* <div className="languages__item">
                     <h3>Russian</h3>
                     <span>&nbsp;- C2</span>
-                </div>
+                </div> */}
             </div>
         </div>
     </div>

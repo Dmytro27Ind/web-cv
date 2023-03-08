@@ -15,7 +15,13 @@ function SkillsSection() {
       {name: 'Webpack', icon: require('../assets/icons/webpack-icon.png')},
     ],
     [
+      {name: 'MaterialUI', icon: require('../assets/icons/mui-icon.png')},
+      {name: 'Vite', icon: require('../assets/icons/vite-icon.png')},
       {name: 'Sass/Scss', icon: require('../assets/icons/sass-icon.png')},
+    ],
+    [
+      {name: 'Emotion', icon: require('../assets/icons/emotion-icon.png')},
+      {name: 'styled-co...', icon: require('../assets/icons/styled-components-icon.png')},
     ],
   ])
   const [backEndSkills] = useState([
@@ -26,6 +32,9 @@ function SkillsSection() {
     ],
     [
       {name: 'MongoDB', icon: require('../assets/icons/mongodb-icon.png')},
+    ],
+    [
+      {name: '', icon: ''},
     ],
     [
       {name: '', icon: ''},

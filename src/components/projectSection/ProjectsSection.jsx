@@ -5,6 +5,13 @@ import ProjectItem from './ProjectItem'
 function ProjectsSection() {
   let [projects] = useState([
     {
+      name: "React Food Delivery",
+      desc: "This is a website prototype for selling and delivering fast food.",
+      lang: ["JavaScript", "React"],
+      link: "https://github.com/Dmytro27Ind/react-food-delivery",
+      demo: 'https://dmytro27ind.github.io/react-food-delivery/'
+    },
+    {
       name: "React Music Player",
       desc: "This is a music player written in React using libraries such as Redux and MUI for UI elements.",
       lang: ["JavaScript", "React"],
