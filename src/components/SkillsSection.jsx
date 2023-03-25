@@ -10,16 +10,17 @@ function SkillsSection() {
       {name: 'JavaScript', icon: require('../assets/icons/js-icon.png')},
     ],
     [
+      {name: 'TypeScript', icon: require('../assets/icons/typescript-icon.png')},
       {name: 'React', icon: require('../assets/icons/react-icon.png')},
       {name: 'Redux', icon: require('../assets/icons/redux-icon.png')},
+    ],
+    [
       {name: 'Webpack', icon: require('../assets/icons/webpack-icon.png')},
-    ],
-    [
-      {name: 'MaterialUI', icon: require('../assets/icons/mui-icon.png')},
       {name: 'Vite', icon: require('../assets/icons/vite-icon.png')},
-      {name: 'Sass/Scss', icon: require('../assets/icons/sass-icon.png')},
+      {name: 'MaterialUI', icon: require('../assets/icons/mui-icon.png')},
     ],
     [
+      {name: 'Sass/Scss', icon: require('../assets/icons/sass-icon.png')},
       {name: 'Emotion', icon: require('../assets/icons/emotion-icon.png')},
       {name: 'styled-co...', icon: require('../assets/icons/styled-components-icon.png')},
     ],

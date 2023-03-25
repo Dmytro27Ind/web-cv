@@ -19,7 +19,7 @@ function Sidebar() {
         <div className="sidebar__header">
             <img className="sidebar__ava" alt="ava" src={require("../assets/photo.png")}/>
             <h1>Bc. Dmytro Kagirov</h1>
-            <h2>Student, Web Developer</h2>
+            <h2>Web Developer, Student</h2>
             <div className='sidebar__contacts'>
               <ContactIcon size={30} link='https://www.facebook.com/dmytro.kagirov.1' name="facebook"/>
               <ContactIcon size={30} link='https://t.me/lyn10i' name="telegram"/>
